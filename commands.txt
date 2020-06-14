@@ -1,0 +1,8 @@
+list database:- 'show dbs'
+create database:- 'use DATABASENAME'
+create collection :- 'db.collectionname'
+insert data (one) :- 'db.collectionname.insert_one({})'
+insert data(many) :- 'db.collectionname.insert_many({})'
+show data in collection :- 'db.collectionname.find()' and 'db.collectionname.find().pretty()'
+delete database :- 'db.dropDatabase()'
+delete collection :- 'db.collectionname.drop()'
