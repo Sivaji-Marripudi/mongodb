@@ -7,7 +7,7 @@ query = [
     {
         '_id':1,
         'name':'siva',
-        'url':'https://www,sivaji.com',
+        'url':'https://www.sivaji.com',
         'email':'siva@gmail.com',
         'phone':9988776655,
         'address':{
