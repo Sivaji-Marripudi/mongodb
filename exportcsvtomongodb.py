@@ -10,8 +10,8 @@ class mongodb(object):
         self.dbname = dbname
         self.collectionname = collectionname
         self.client = MongoClient('localhost',27017)
-        self.database = self.client['dbname']
-        self.collection = self.database['collectionname']
+        self.database = self.client[self.dbname]
+        self.collection = self.database[self.collectionname]
     def inserted(self,path = None):
         df = pd.read_csv(path)
         data = df.to_dict('records')
