@@ -70,5 +70,5 @@ query = [
         'hobbies':['playing','cooking','reading']
     }
 ]
-insert = collection.insert_many(query)
+insert = collection.insert_one(query)
 print(insert)
